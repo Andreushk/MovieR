@@ -1,13 +1,12 @@
-import LogoImage from '@/app/assets/images/logo/Logo.svg';
 import Image from 'next/image';
-import './styles.css';
+import styles from './styles.module.css';
 
 const LOGO_ALT = 'application logo';
 
 const Logo: React.FC = () => {
   return (
-    <div className="header__logo_container">
-      <Image src={LogoImage} priority alt={LOGO_ALT} />
+    <div className={styles.container}>
+      <Image src={'/logo/logo.svg'} width={157} height={55} alt={LOGO_ALT} priority />
     </div>
   );
 };

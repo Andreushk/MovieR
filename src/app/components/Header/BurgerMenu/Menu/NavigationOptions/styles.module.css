@@ -1,0 +1,11 @@
+.container {
+  padding: 3rem;
+}
+
+.container > div {
+  margin-bottom: 2rem;
+}
+
+.container > div:last-of-type {
+  margin-bottom: 0;
+}

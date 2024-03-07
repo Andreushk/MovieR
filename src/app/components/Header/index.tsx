@@ -1,5 +1,6 @@
 import NavigationItems from './NavigationItems';
-import Account from './Account';
+import RegistrationButtons from './RegistrationButtons';
+import BurgerMenu from './BurgerMenu';
 import Logo from './Logo';
 import React from 'react';
 
@@ -8,7 +9,8 @@ const Header: React.FC = () => {
     <header>
       <Logo />
       <NavigationItems />
-      <Account />
+      <RegistrationButtons />
+      <BurgerMenu />
     </header>
   );
 };
