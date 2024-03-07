@@ -1,0 +1,69 @@
+.container {
+  min-height: 100dvh;
+}
+
+.background_container {
+  background-image: url('../app/assets//images/context/background-discover.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+}
+
+.blur_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+}
+
+.search_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 33.75rem;
+  text-align: center;
+}
+
+.text_container {
+  width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.text_container > h1 {
+  margin-bottom: 0.5rem;
+}
+
+@media all and (max-width: 850px) {
+  .search_container {
+    width: 64.71%;
+  }
+
+  .text_container {
+    width: 72.73%;
+  }
+}
+
+@media all and (max-width: 605px) {
+  .search_container,
+  .text_container {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .search_container,
+  .text_container {
+    width: 85%;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .text_container {
+    width: 75%;
+  }
+}

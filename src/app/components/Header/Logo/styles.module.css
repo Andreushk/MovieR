@@ -1,5 +1,6 @@
 .container {
   cursor: pointer;
+  width: 13.25rem;
 }
 
 @media all and (max-width: 1000px) {
