@@ -1,0 +1,17 @@
+.header__navigation {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__nav__item {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.selected__header__nav__item {
+  font-weight: 700;
+}
