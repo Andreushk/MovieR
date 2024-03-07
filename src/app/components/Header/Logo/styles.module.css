@@ -1,0 +1,10 @@
+.container {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .container > img {
+    width: auto;
+    height: 2.875rem;
+  }
+}

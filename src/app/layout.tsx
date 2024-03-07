@@ -1,9 +1,7 @@
-import { Roboto } from 'next/font/google';
+import roboto from '@/app/assets/fonts/fonts';
 import Header from './components/Header';
 import type { Metadata } from 'next';
 import './globalStyles.css';
-
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
   title: 'MovieR',

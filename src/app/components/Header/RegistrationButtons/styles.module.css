@@ -1,0 +1,31 @@
+.registration_buttons_container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.registration_buttons_container > button {
+  cursor: pointer;
+  width: 6.25rem;
+  height: 2.875rem;
+  border-radius: 0.625rem;
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #fff;
+}
+
+.registration_buttons_container > button:first-of-type {
+  border: 1px solid #fff;
+  background: none;
+}
+
+.registration_buttons_container > button:last-of-type {
+  background: rgb(0, 159, 242);
+  border: none;
+}
+
+@media all and (max-width: 850px) {
+  .registration_buttons_container {
+    display: none;
+  }
+}

@@ -2,14 +2,14 @@
 
 import { navbarItemsOptions, INavbarItemOption } from './options';
 import { usePathname } from 'next/navigation';
+import styles from './styles.module.css';
 import Link from 'next/link';
-import './styles.css';
 
 const NavigationItems: React.FC = () => {
   const pathname: string = usePathname();
 
   return (
-    <nav className="header__navigation">
+    <nav className={styles.nav_container}>
       {navbarItemsOptions.map(({ displayTitle, path }: INavbarItemOption) => {
         const isActive = pathname === path;
 
@@ -17,7 +17,7 @@ const NavigationItems: React.FC = () => {
           <Link
             key={displayTitle}
             href={path}
-            className={`header__nav__item ${isActive ? 'selected__header__nav__item' : ''}`}
+            className={`${styles.item} ${isActive ? styles.selected_item : ''}`}
           >
             {displayTitle}
           </Link>
