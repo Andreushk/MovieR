@@ -1,4 +1,4 @@
-import { navbarItemsOptions } from '@/components/Header/NavigationItems/options';
+import navbarItemsOptions from '@/constants/navigationOptions';
 import styles from './styles.module.css';
 import Option from './Option';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { navbarItemsOptions } from '@/components/Header/NavigationItems/options';
+import navbarItemsOptions from '@/constants/navigationOptions';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 

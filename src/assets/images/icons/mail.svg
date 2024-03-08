@@ -1,0 +1,13 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip12_106">
+			<rect id="Mail open" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip12_106)">
+		<path id="path" d="M3 10.0705C3 9.40177 3.33423 8.77731 3.89062 8.40637L10.8906 3.73971C11.5624 3.29184 12.4376 3.29184 13.1094 3.73971L20.1094 8.40637C20.6658 8.77731 21 9.40177 21 10.0705L21 19.0001C21 20.1047 20.1046 21.0001 19 21.0001L5 21.0001C3.89539 21.0001 3 20.1047 3 19.0001L3 10.0705ZM3 19.0001L9.75 14.5001M21 19.0001L14.25 14.5001M3 10.0705L9.75 14.5001L10.8906 15.2605C11.5624 15.7084 12.4376 15.7084 13.1094 15.2605L14.25 14.5001L21 10.0705" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+	</g>
+</svg>

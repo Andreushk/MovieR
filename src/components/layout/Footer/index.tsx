@@ -1,4 +1,4 @@
-import Paragraph from '../common/Paragraph';
+import Paragraph from '../../common/Paragraph';
 import styles from './styles.module.css';
 import Navigation from './Navigation';
 

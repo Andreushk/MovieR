@@ -1,6 +1,6 @@
 'use client';
 
-import { navbarItemsOptions } from '@/components/Header/NavigationItems/options';
+import navbarItemsOptions from '@/constants/navigationOptions';
 import { usePathname } from 'next/navigation';
 import styles from './styles.module.css';
 import Link from 'next/link';

@@ -1,5 +1,5 @@
 .container {
-  min-height: calc(100dvh - 12.5rem);
+  min-height: 100%;
 }
 
 .background_container {
@@ -52,12 +52,6 @@
   .search_container,
   .text_container {
     width: 80%;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .container {
-    min-height: calc(100dvh - 13.75rem);
   }
 }
 

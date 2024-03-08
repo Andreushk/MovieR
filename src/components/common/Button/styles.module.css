@@ -9,6 +9,13 @@
   color: #fff;
 }
 
+.with_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .primary {
   background: rgb(0, 159, 242);
   border: none;
