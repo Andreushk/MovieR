@@ -1,4 +1,4 @@
-import AvailiableRoutingPaths from '@/app/types/routing';
+import AvailiableRoutingPaths from '@/types/routing';
 
 export interface INavbarItemOption {
   displayTitle: string;

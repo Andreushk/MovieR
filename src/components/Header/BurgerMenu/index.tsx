@@ -1,6 +1,6 @@
 'use client';
 
-import MenuIcon from '@/app/assets/images/icons/Menu.svg';
+import MenuIcon from '@/assets/images/icons/menu.svg';
 import styles from './styles.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
