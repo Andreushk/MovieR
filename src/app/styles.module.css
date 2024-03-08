@@ -1,9 +1,9 @@
 .container {
-  min-height: 100dvh;
+  min-height: calc(100dvh - 12.5rem);
 }
 
 .background_container {
-  background-image: url('../app/assets//images/context/background-discover.png');
+  background-image: url('../assets/images/context/background-discover.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,6 +52,12 @@
   .search_container,
   .text_container {
     width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    min-height: calc(100dvh - 13.75rem);
   }
 }
 

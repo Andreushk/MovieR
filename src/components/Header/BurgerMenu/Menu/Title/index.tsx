@@ -1,4 +1,4 @@
-import CrossIcon from '@/app/assets/images/icons/cross.svg';
+import CrossIcon from '@/assets/images/icons/cross.svg';
 import styles from './style.module.css';
 import Image from 'next/image';
 

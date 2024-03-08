@@ -1,6 +1,6 @@
 'use client';
 
-import AvailiableRoutingPaths from '@/app/types/routing';
+import AvailiableRoutingPaths from '@/types/routing';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import Link from 'next/link';

@@ -1,4 +1,4 @@
-import { Paragraph, Search, Title } from './components/common';
+import { Paragraph, Search, Title } from '../components/common';
 import styles from './styles.module.css';
 import { useCallback } from 'react';
 
@@ -19,7 +19,7 @@ const Home: React.FC = () => {
           <div className={styles.search_container}>
             <div className={styles.text_container}>
               <Title>{SEARCH_TITLE}</Title>
-              <Paragraph>{SEARCH_PARAGRAPH}</Paragraph>
+              <Paragraph type="primary">{SEARCH_PARAGRAPH}</Paragraph>
             </div>
             <Search placeholder={SEARCH_PLACEHOLDER} searchCB={handleSearch} />
           </div>

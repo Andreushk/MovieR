@@ -1,5 +1,6 @@
-import roboto from '@/app/assets/fonts/fonts';
-import Header from './components/Header';
+import roboto from '@/assets/fonts/fonts';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import './globalStyles.css';
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
