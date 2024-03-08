@@ -2,7 +2,7 @@ import RegistrationButtons from './RegistrationButtons';
 import NavigationItems from './NavigationItems';
 import styles from './styles.module.css';
 import BurgerMenu from './BurgerMenu';
-import { Logo } from '../common';
+import { Logo } from '../../common';
 import React from 'react';
 
 const Header: React.FC = () => {

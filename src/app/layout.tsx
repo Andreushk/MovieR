@@ -1,6 +1,5 @@
+import { Footer, Header } from '@/components/layout';
 import roboto from '@/assets/fonts/fonts';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import './globalStyles.css';
 

@@ -5,7 +5,7 @@ export interface INavbarItemOption {
   path: AvailiableRoutingPaths;
 }
 
-export const navbarItemsOptions: INavbarItemOption[] = [
+const navbarItemsOptions: INavbarItemOption[] = [
   {
     displayTitle: 'Discover',
     path: '/',
@@ -19,3 +19,5 @@ export const navbarItemsOptions: INavbarItemOption[] = [
     path: '/contact',
   },
 ];
+
+export default navbarItemsOptions;
