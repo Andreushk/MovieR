@@ -17,7 +17,7 @@ const Menu: React.FC<IComponentsProps> = ({ closeCB }) => {
     setIsVisible(true);
   }, []);
 
-  const handleCrossIconClick = (): void => {
+  const handleCloseClick = (): void => {
     setIsVisible(false);
 
     const closeTimerId = setTimeout((): void => {
@@ -28,9 +28,9 @@ const Menu: React.FC<IComponentsProps> = ({ closeCB }) => {
 
   return (
     <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
-      <Title crossIconClickCB={handleCrossIconClick} />
-      <NavigationOptions />
-      <Registration />
+      <Title crossIconClickCB={handleCloseClick} />
+      <NavigationOptions closeMenuCB={handleCloseClick} />
+      <Registration closeMenuCB={handleCloseClick} />
     </div>
   );
 };

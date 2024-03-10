@@ -1,0 +1,9 @@
+.article_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.article_container > h1 {
+  font-size: 1.125rem;
+}

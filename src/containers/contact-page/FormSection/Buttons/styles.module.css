@@ -1,0 +1,31 @@
+.container {
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reset_button_container {
+  width: 6.25rem;
+}
+
+.send_button_container {
+  width: 8.75rem;
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    float: none;
+    margin-top: 1.5rem;
+  }
+
+  .reset_button_container {
+    flex: 1 1 80%;
+    width: 100%;
+  }
+
+  .send_button_container {
+    flex: 1 1 120%;
+    width: 100%;
+  }
+}

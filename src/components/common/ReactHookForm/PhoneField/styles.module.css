@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.188rem;
+}
+
+.label > span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  color: #999999;
+}
+
+.input_wrapper {
+  height: 2.875rem;
+  padding-left: 1rem;
+  border: 2px solid #262626;
+  border-radius: 0.5rem;
+  background: #141414;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.188rem;
+  color: #fff;
+}
+
+.input_wrapper > input {
+  height: 100%;
+  padding-right: 1rem;
+  background: #141414;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.188rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.input_wrapper > input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.188rem;
+  color: #999999;
+}

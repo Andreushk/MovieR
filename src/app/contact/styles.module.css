@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  gap: 48px;
+  height: 100%;
+  padding: 9.25rem 4.375rem 3rem 4.375rem;
+}
+
+@media all and (max-width: 1350px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    padding: 7.5rem 3rem 3rem 3rem;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    gap: 32px;
+  }
+}

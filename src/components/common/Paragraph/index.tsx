@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 type ParagraphVariants = 'primary' | 'secondary';
 
 interface IComponentProps {
-  children: string;
+  children: string | React.ReactNode;
   type: ParagraphVariants;
 }
 

@@ -13,7 +13,7 @@ const BurgerMenu: React.FC = () => {
     setIsMenuOpen(true);
   };
 
-  const handleCloseMenuIconClick = (): void => {
+  const handleCloseMenuClick = (): void => {
     setIsMenuOpen(false);
   };
 
@@ -22,7 +22,7 @@ const BurgerMenu: React.FC = () => {
       <div className={styles.menu_button_container} onClick={handleMenuIconClick}>
         <Image src={MenuIcon} alt="menu" />
       </div>
-      {isMenuOpen && <Menu closeCB={handleCloseMenuIconClick} />}
+      {isMenuOpen && <Menu closeCB={handleCloseMenuClick} />}
     </>
   );
 };

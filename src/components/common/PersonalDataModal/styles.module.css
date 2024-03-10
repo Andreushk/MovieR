@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  max-width: 34.375rem;
+  max-height: 80dvh;
+  transform: translate(-50%, -50%);
+  padding: 3rem 2rem;
+  border: 2px solid #262626;
+  border-radius: 0.5rem;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    max-width: unset;
+    width: 85%;
+    padding: 2rem 2rem;
+  }
+}

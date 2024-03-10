@@ -4,6 +4,7 @@ import navbarItemsOptions from '@/constants/navigationOptions';
 import { usePathname } from 'next/navigation';
 import styles from './styles.module.css';
 import Link from 'next/link';
+import React from 'react';
 
 const Links: React.FC = () => {
   const pathname: string = usePathname();
@@ -12,9 +13,8 @@ const Links: React.FC = () => {
     <div className={styles.container}>
       {navbarItemsOptions.map((option, i) => {
         return (
-          <>
+          <React.Fragment key={option.path}>
             <Link
-              key={option.path}
               href={option.path}
               className={`${styles.navigation_item} ${
                 pathname === option.path ? styles.current : ''
@@ -23,7 +23,7 @@ const Links: React.FC = () => {
               {option.displayTitle}
             </Link>
             {i !== navbarItemsOptions.length - 1 && <p>/</p>}
-          </>
+          </React.Fragment>
         );
       })}
     </div>

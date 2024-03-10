@@ -1,0 +1,53 @@
+.introduction_container {
+  flex: 0 0 31.75rem;
+  width: 31.75rem;
+}
+
+.title_container {
+  margin-bottom: 1.5rem;
+}
+
+.title_container > p {
+  margin-top: 0.5rem;
+  max-width: 80%;
+}
+
+.image_container {
+  padding: 0.25rem;
+  width: 31.75rem;
+  height: 28rem;
+  border-radius: 0.5rem;
+  background: #262626;
+}
+
+.image_container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+@media all and (max-width: 1350px) {
+  .introduction_container {
+    margin: 0 auto;
+  }
+
+  .title_container {
+    text-align: center;
+  }
+
+  .title_container > p {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .introduction_container {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .image_container {
+    width: 100%;
+    height: auto;
+  }
+}

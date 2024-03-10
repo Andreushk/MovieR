@@ -25,3 +25,15 @@
   border: 1px solid #fff;
   background: none;
 }
+
+.primary_disabled {
+  cursor: default;
+  background-color: #999999;
+  color: #656565;
+}
+
+.secondary_disabled {
+  cursor: default;
+  border: 1px solid #999999;
+  color: #999999;
+}
