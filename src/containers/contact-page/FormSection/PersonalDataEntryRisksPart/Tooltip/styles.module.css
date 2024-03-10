@@ -1,0 +1,27 @@
+.container {
+  cursor: default;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px;
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  bottom: -0.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+.visible {
+  opacity: 1;
+}

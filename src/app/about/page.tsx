@@ -1,4 +1,4 @@
-import { AboutBlock, DevicesSupportBlock, QuestionsBlock } from '@/components/pages';
+import { AboutSection, SupportedDevicesSection, QuestionsSection } from '@/containers/index';
 import styles from './styles.module.css';
 import { Metadata } from 'next';
 
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className={styles.container}>
-      <AboutBlock />
-      <DevicesSupportBlock />
-      <QuestionsBlock />
+      <AboutSection />
+      <SupportedDevicesSection />
+      <QuestionsSection />
     </div>
   );
 };

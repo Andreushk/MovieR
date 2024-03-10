@@ -1,0 +1,26 @@
+.container {
+  flex: 0 0 20.5rem;
+  width: 20.5rem;
+}
+
+.container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+@media all and (max-width: 775px) {
+  .container {
+    margin: 0 auto;
+    flex: 0 0 80%;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .container {
+    margin: 0 auto;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}

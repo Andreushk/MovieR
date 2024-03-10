@@ -1,0 +1,26 @@
+.container {
+  flex: 1 1 100%;
+  width: 100%;
+  border: 2px solid #262626;
+  border-radius: 0.5rem;
+  background: #1a1a1a;
+  padding: 2rem;
+}
+
+.agreement_and_buttons_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 750px) {
+  .agreement_and_buttons_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+}
