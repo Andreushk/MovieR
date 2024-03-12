@@ -4,12 +4,10 @@ import Image from 'next/image';
 
 const CINEMA_PICTURE_ALT = 'cinema picture';
 
-const ImagePart: React.FC = () => {
-  return (
-    <div className={styles.container}>
-      <Image src={CinemaPicture} alt={CINEMA_PICTURE_ALT} />
-    </div>
-  );
-};
+const ImagePart: React.FC = () => (
+  <div className={styles.container}>
+    <Image src={CinemaPicture} alt={CINEMA_PICTURE_ALT} />
+  </div>
+);
 
 export default ImagePart;

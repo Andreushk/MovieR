@@ -1,13 +1,13 @@
 'use client';
 
-import { contactValidationSchema } from '@/utils/schemas/contactValidationSchema';
-import PersonalDataEntryRisksPart from './PersonalDataEntryRisksPart';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import { zodResolver } from '@hookform/resolvers/zod';
-import ContactFormDataType from '@/types/contactForm';
-import ContactInfoPart from './ContactInfoPart';
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { contactValidationSchema } from '@/utils/schemas/contactValidationSchema';
+import PersonalDataEntryRisksPart from './PersonalDataEntryRisksPart';
+import ContactFormDataType from '@/types/contactForm';
+import ContactInfoPart from './ContactInfoPart';
 import styles from './styles.module.css';
 import MessagePart from './MessagePart';
 import NamePart from './NamePart';
@@ -31,8 +31,8 @@ const FormSection: React.FC = () => {
 
   const phoneNumberValue: string | undefined = watch('phoneNumber');
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleFormSubmit = useCallback((data: ContactFormDataType): void => {
-    console.log(data);
     reset();
   }, []);
 

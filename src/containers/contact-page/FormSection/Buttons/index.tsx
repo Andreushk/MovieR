@@ -10,17 +10,15 @@ interface IComponentProps {
   resetCB: () => void;
 }
 
-const Buttons: React.FC<IComponentProps> = ({ isValid, resetCB }) => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.reset_button_container}>
-        <Button value={RESET_BUTTON_TEXT} type="secondary" clickCB={resetCB} />
-      </div>
-      <div className={styles.send_button_container}>
-        <Button value={SEND_BUTTON_TEXT} type="primary" isSubmit isDisabled={!isValid} />
-      </div>
+const Buttons: React.FC<IComponentProps> = ({ isValid, resetCB }) => (
+  <div className={styles.container}>
+    <div className={styles.reset_button_container}>
+      <Button value={RESET_BUTTON_TEXT} type="secondary" clickCB={resetCB} />
     </div>
-  );
-};
+    <div className={styles.send_button_container}>
+      <Button value={SEND_BUTTON_TEXT} type="primary" isSubmit isDisabled={!isValid} />
+    </div>
+  </div>
+);
 
 export default React.memo(Buttons);

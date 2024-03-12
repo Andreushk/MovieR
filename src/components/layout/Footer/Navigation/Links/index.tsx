@@ -11,21 +11,19 @@ const Links: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      {navbarItemsOptions.map((option, i) => {
-        return (
-          <React.Fragment key={option.path}>
-            <Link
-              href={option.path}
-              className={`${styles.navigation_item} ${
-                pathname === option.path ? styles.current : ''
-              }`}
-            >
-              {option.displayTitle}
-            </Link>
-            {i !== navbarItemsOptions.length - 1 && <p>/</p>}
-          </React.Fragment>
-        );
-      })}
+      {navbarItemsOptions.map((option, i) => (
+        <React.Fragment key={option.path}>
+          <Link
+            href={option.path}
+            className={`${styles.navigation_item} ${
+              pathname === option.path ? styles.current : ''
+            }`}
+          >
+            {option.displayTitle}
+          </Link>
+          {i !== navbarItemsOptions.length - 1 && <p>/</p>}
+        </React.Fragment>
+      ))}
     </div>
   );
 };

@@ -18,18 +18,19 @@ const HookFormTextarea: React.FC<IComponentProps> = ({
   label,
   placeholder,
   error,
-}) => {
-  return (
-    <div className={styles.container}>
-      <label className={styles.label}>{label}</label>
-      <textarea
-        {...register(name, { required: true })}
-        placeholder={placeholder}
-        className={styles.textarea}
-      />
-      <Message errorMessage={error} />
-    </div>
-  );
-};
+}) => (
+  <div className={styles.container}>
+    <label className={styles.label} htmlFor="message">
+      {label}
+    </label>
+    <textarea
+      {...register(name, { required: true })}
+      placeholder={placeholder}
+      className={styles.textarea}
+      id="message"
+    />
+    <Message errorMessage={error} />
+  </div>
+);
 
 export default HookFormTextarea;

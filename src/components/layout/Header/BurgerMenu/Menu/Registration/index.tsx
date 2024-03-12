@@ -16,16 +16,19 @@ const Registration: React.FC<IComponentProps> = ({ closeMenuCB }) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect((): void => {
-    const visibilityTimerId = setTimeout((): void => {
-      setIsVisible(true);
-      clearTimeout(visibilityTimerId);
-    }, (navbarItemsOptions.length - 1) * 300);
+    const visibilityTimerId = setTimeout(
+      (): void => {
+        setIsVisible(true);
+        clearTimeout(visibilityTimerId);
+      },
+      (navbarItemsOptions.length - 1) * 300,
+    );
   }, []);
 
   return (
     <div className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
-      <Button type="primary" value={LOGIN_BUTTON} clickCB={closeMenuCB}></Button>
-      <Button type="primary" value={SIGNUP_BUTTON} clickCB={closeMenuCB}></Button>
+      <Button type="primary" value={LOGIN_BUTTON} clickCB={closeMenuCB} />
+      <Button type="primary" value={SIGNUP_BUTTON} clickCB={closeMenuCB} />
     </div>
   );
 };

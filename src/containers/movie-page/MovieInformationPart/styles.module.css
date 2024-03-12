@@ -1,0 +1,37 @@
+.movie_data_container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.poster_button_container {
+  flex: 0 0 18.75rem;
+  width: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media all and (max-width: 920px) {
+  .movie_data_container {
+    flex-direction: column;
+  }
+
+  .poster_button_container {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .poster_button_container {
+    flex: 0 0 75%;
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .poster_button_container {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}

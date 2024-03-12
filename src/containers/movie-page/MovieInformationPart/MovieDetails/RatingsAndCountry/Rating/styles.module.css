@@ -1,0 +1,20 @@
+.rating_wrapper {
+  flex: 1 1 100%;
+  padding: 1rem;
+  border: 2px solid #262626;
+  border-radius: 0.5rem;
+  background: #1a1a1a;
+}
+
+.rating_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.25rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}

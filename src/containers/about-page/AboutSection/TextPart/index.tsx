@@ -7,15 +7,13 @@ const ABOUT_SECTION_FIRST_PART =
 const ABOUT_SECTION_SECOND_PART =
   'You can also securely register and manage lists of movies you want to watch or have already watched.';
 
-const TextPart: React.FC = () => {
-  return (
-    <div className={styles.container}>
-      <Title>{ABOUT_SECTION_TITLE}</Title>
-      <Paragraph type="secondary">{ABOUT_SECTION_FIRST_PART}</Paragraph>
-      <br />
-      <Paragraph type="secondary">{ABOUT_SECTION_SECOND_PART}</Paragraph>
-    </div>
-  );
-};
+const TextPart: React.FC = () => (
+  <div className={styles.container}>
+    <Title>{ABOUT_SECTION_TITLE}</Title>
+    <Paragraph type="secondary">{ABOUT_SECTION_FIRST_PART}</Paragraph>
+    <br />
+    <Paragraph type="secondary">{ABOUT_SECTION_SECOND_PART}</Paragraph>
+  </div>
+);
 
 export default TextPart;
