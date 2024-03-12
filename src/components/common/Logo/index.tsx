@@ -15,7 +15,7 @@ const Logo: React.FC = () => {
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <Image src={'/logo/logo.svg'} width={157} height={55} alt={LOGO_ALT} priority />
+      <Image src="/logo/logo.svg" width={157} height={55} alt={LOGO_ALT} priority />
     </div>
   );
 };

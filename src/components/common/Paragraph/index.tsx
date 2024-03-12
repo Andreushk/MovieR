@@ -7,12 +7,10 @@ interface IComponentProps {
   type: ParagraphVariants;
 }
 
-const Paragraph: React.FC<IComponentProps> = ({ children, type }) => {
-  return (
-    <p className={`${type === 'primary' ? styles.paragraph_primary : styles.paragraph_secondary}`}>
-      {children}
-    </p>
-  );
-};
+const Paragraph: React.FC<IComponentProps> = ({ children, type }) => (
+  <p className={`${type === 'primary' ? styles.paragraph_primary : styles.paragraph_secondary}`}>
+    {children}
+  </p>
+);
 
 export default Paragraph;

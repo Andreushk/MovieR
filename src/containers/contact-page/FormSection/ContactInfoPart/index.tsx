@@ -37,7 +37,7 @@ const ContactInfoPart: React.FC<IComponentProps> = ({
       <div className={styles.input_wrapper}>
         <HookFormInput
           register={inputsRegister}
-          name={'emailAddress'}
+          name="emailAddress"
           label={EMAIL_ADDRESS_FIELD_LABEL}
           placeholder={EMAIL_ADDRESS_FIELD_PLACEHOLDER}
           error={emailInputError}

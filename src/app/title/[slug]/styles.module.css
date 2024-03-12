@@ -1,0 +1,10 @@
+.container {
+  height: 100%;
+  padding: 9.25rem 4.375rem 3rem 4.375rem;
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    padding: 7.5rem 3rem 3rem 3rem;
+  }
+}

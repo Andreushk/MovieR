@@ -12,18 +12,16 @@ interface IComponentProps {
   inputsRegister: UseFormRegister<ContactFormDataType>;
 }
 
-const MessagePart: React.FC<IComponentProps> = ({ error, inputsRegister }) => {
-  return (
-    <div className={styles.container}>
-      <HookFromTextarea
-        register={inputsRegister}
-        name={'message'}
-        label={MESSAGE_TEXTAREA_LABEL}
-        placeholder={MESSAGE_TEXTAREA_PLACEHOLDER}
-        error={error}
-      />
-    </div>
-  );
-};
+const MessagePart: React.FC<IComponentProps> = ({ error, inputsRegister }) => (
+  <div className={styles.container}>
+    <HookFromTextarea
+      register={inputsRegister}
+      name="message"
+      label={MESSAGE_TEXTAREA_LABEL}
+      placeholder={MESSAGE_TEXTAREA_PLACEHOLDER}
+      error={error}
+    />
+  </div>
+);
 
 export default React.memo(MessagePart);

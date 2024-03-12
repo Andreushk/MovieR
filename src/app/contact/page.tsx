@@ -7,13 +7,11 @@ export const metadata: Metadata = {
   description: 'Contact our support team.',
 };
 
-const Contact: React.FC = () => {
-  return (
-    <div className={styles.container}>
-      <IntroducingSection />
-      <FormSection />
-    </div>
-  );
-};
+const Contact: React.FC = () => (
+  <div className={styles.container}>
+    <IntroducingSection />
+    <FormSection />
+  </div>
+);
 
 export default Contact;

@@ -6,13 +6,11 @@ interface IComponentProps {
   text: string;
 }
 
-const Article: React.FC<IComponentProps> = ({ title, text }) => {
-  return (
-    <div className={styles.article_container}>
-      <Title>{title}</Title>
-      <Paragraph type="secondary">{text}</Paragraph>
-    </div>
-  );
-};
+const Article: React.FC<IComponentProps> = ({ title, text }) => (
+  <div className={styles.article_container}>
+    <Title>{title}</Title>
+    <Paragraph type="secondary">{text}</Paragraph>
+  </div>
+);
 
 export default Article;

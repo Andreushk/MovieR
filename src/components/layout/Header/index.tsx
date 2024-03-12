@@ -5,15 +5,13 @@ import BurgerMenu from './BurgerMenu';
 import { Logo } from '../../common';
 import React from 'react';
 
-const Header: React.FC = () => {
-  return (
-    <header className={styles.header}>
-      <Logo />
-      <NavigationItems />
-      <RegistrationButtons />
-      <BurgerMenu />
-    </header>
-  );
-};
+const Header: React.FC = () => (
+  <header className={styles.header}>
+    <Logo />
+    <NavigationItems />
+    <RegistrationButtons />
+    <BurgerMenu />
+  </header>
+);
 
 export default React.memo(Header);

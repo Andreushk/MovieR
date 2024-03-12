@@ -1,0 +1,6 @@
+.details_item_title {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}

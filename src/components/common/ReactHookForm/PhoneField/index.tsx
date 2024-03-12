@@ -1,9 +1,9 @@
 import { E164Number } from 'libphonenumber-js/core';
 import PhoneInput from 'react-phone-number-input';
-import Message from '../Message';
 import 'react-phone-number-input/style.css';
 import styles from './styles.module.css';
 import { useState } from 'react';
+import Message from '../Message';
 
 interface IComponentProps {
   label: string;
@@ -30,7 +30,7 @@ const PhoneField: React.FC<IComponentProps> = ({ value, label, placeholder, erro
 
   return (
     <div className={styles.container}>
-      <label className={styles.label}>
+      <label className={styles.label} htmlFor="phoneField">
         {label} <span>optional</span>
       </label>
       <PhoneInput
@@ -43,6 +43,7 @@ const PhoneField: React.FC<IComponentProps> = ({ value, label, placeholder, erro
         className={styles.input_wrapper}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        id="phoneField"
       />
       <Message errorMessage={!isFocused && error ? error : undefined} />
     </div>

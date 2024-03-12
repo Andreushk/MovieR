@@ -1,0 +1,9 @@
+.movie_poster_container {
+  width: 100%;
+}
+
+.movie_poster_container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}

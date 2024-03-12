@@ -8,17 +8,15 @@ interface IComponentProps {
   closeCB: () => void;
 }
 
-const PersonalDataModal: React.FC<IComponentProps> = ({ closeCB }) => {
-  return (
-    <Overlay>
-      <WithClickOutside onOutsideClick={closeCB}>
-        <section className={styles.container}>
-          <TitlePart />
-          <TextBlockPart />
-        </section>
-      </WithClickOutside>
-    </Overlay>
-  );
-};
+const PersonalDataModal: React.FC<IComponentProps> = ({ closeCB }) => (
+  <Overlay>
+    <WithClickOutside onOutsideClick={closeCB}>
+      <section className={styles.container}>
+        <TitlePart />
+        <TextBlockPart />
+      </section>
+    </WithClickOutside>
+  </Overlay>
+);
 
 export default PersonalDataModal;

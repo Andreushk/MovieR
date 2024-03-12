@@ -22,19 +22,20 @@ const HookFormInput: React.FC<IComponentProps> = ({
   placeholder,
   type = 'text',
   error,
-}) => {
-  return (
-    <div className={styles.container}>
-      <label className={styles.label}>{label}</label>
-      <input
-        {...register(name, { required: true })}
-        type={type}
-        placeholder={placeholder}
-        className={styles.input}
-      />
-      <Message errorMessage={error} />
-    </div>
-  );
-};
+}) => (
+  <div className={styles.container}>
+    <label className={styles.label} htmlFor={name}>
+      {label}
+    </label>
+    <input
+      {...register(name, { required: true })}
+      type={type}
+      placeholder={placeholder}
+      className={styles.input}
+      id={name}
+    />
+    <Message errorMessage={error} />
+  </div>
+);
 
 export default HookFormInput;

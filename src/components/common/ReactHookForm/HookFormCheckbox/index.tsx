@@ -22,14 +22,15 @@ const HookFormCheckbox: React.FC<IComponentProps> = ({
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <label className={styles.label}>
+      <label className={styles.label} htmlFor={name}>
         <input
           {...register(name, { validate: (value) => value === true })}
           type="checkbox"
           disabled={isDisabled}
           className={styles.input}
+          id={name}
         />
-        <span className={styles.checkmark}></span>
+        <span className={styles.checkmark} />
       </label>
     </div>
   );

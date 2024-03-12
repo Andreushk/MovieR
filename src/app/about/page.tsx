@@ -7,14 +7,12 @@ export const metadata: Metadata = {
   description: 'Learn more about us.',
 };
 
-const About: React.FC = () => {
-  return (
-    <div className={styles.container}>
-      <AboutSection />
-      <SupportedDevicesSection />
-      <QuestionsSection />
-    </div>
-  );
-};
+const About: React.FC = () => (
+  <div className={styles.container}>
+    <AboutSection />
+    <SupportedDevicesSection />
+    <QuestionsSection />
+  </div>
+);
 
 export default About;

@@ -16,29 +16,27 @@ interface IComponentProps {
   inputsRegister: UseFormRegister<ContactFormDataType>;
 }
 
-const NamePart: React.FC<IComponentProps> = ({ firstNameError, lastNameError, inputsRegister }) => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.input_wrapper}>
-        <HookFormInput
-          register={inputsRegister}
-          name={'firstName'}
-          label={FIRST_NAME_FIELD_LABEL}
-          placeholder={FIRST_NAME_FIELD_PLACEHOLDER}
-          error={firstNameError}
-        />
-      </div>
-      <div className={styles.input_wrapper}>
-        <HookFormInput
-          register={inputsRegister}
-          name={'lastName'}
-          label={LAST_NAME_FIELD_LABEL}
-          placeholder={LAST_NAME_FIELD_PLACEHOLDER}
-          error={lastNameError}
-        />
-      </div>
+const NamePart: React.FC<IComponentProps> = ({ firstNameError, lastNameError, inputsRegister }) => (
+  <div className={styles.container}>
+    <div className={styles.input_wrapper}>
+      <HookFormInput
+        register={inputsRegister}
+        name="firstName"
+        label={FIRST_NAME_FIELD_LABEL}
+        placeholder={FIRST_NAME_FIELD_PLACEHOLDER}
+        error={firstNameError}
+      />
     </div>
-  );
-};
+    <div className={styles.input_wrapper}>
+      <HookFormInput
+        register={inputsRegister}
+        name="lastName"
+        label={LAST_NAME_FIELD_LABEL}
+        placeholder={LAST_NAME_FIELD_PLACEHOLDER}
+        error={lastNameError}
+      />
+    </div>
+  </div>
+);
 
 export default React.memo(NamePart);
