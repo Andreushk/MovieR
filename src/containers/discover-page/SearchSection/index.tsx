@@ -1,9 +1,9 @@
 'use client';
 
 import { Paragraph, Search, Title } from '@/components/common';
+import { useRouter } from 'next/navigation';
 import styles from './styles.module.css';
 import { useCallback } from 'react';
-import { useRouter } from 'next/navigation';
 
 const SEARCH_TITLE = "Find out more about the movie you're interested in!";
 const SEARCH_PARAGRAPH =

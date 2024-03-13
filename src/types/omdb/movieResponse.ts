@@ -1,4 +1,4 @@
-interface IOMDBMovieResponse {
+export interface IOMDBMovieResponse {
   Title: string;
   Year: string;
   Rated: string;
@@ -29,4 +29,7 @@ interface IOMDBMovieResponse {
   Response: string;
 }
 
-export default IOMDBMovieResponse;
+export interface IOMDBNotFoundMovieResponse {
+  Response: 'False';
+  Error: 'Movie not found!';
+}
