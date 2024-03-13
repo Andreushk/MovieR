@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
-import styles from './styles.module.css';
+import LogoIcon from '@/assets/images/icons/logo.svg';
 import { useRouter } from 'next/navigation';
+import styles from './styles.module.css';
+import Image from 'next/image';
 
 const LOGO_ALT = 'application logo';
 
@@ -15,7 +16,7 @@ const Logo: React.FC = () => {
 
   return (
     <div className={styles.container} onClick={handleClick}>
-      <Image src="/logo/logo.svg" width={157} height={55} alt={LOGO_ALT} priority />
+      <Image src={LogoIcon} alt={LOGO_ALT} priority />
     </div>
   );
 };

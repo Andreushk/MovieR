@@ -1,4 +1,4 @@
-import IOMDBMovieResponse from '@/types/omdb/movieResponse';
+import { IOMDBMovieResponse } from '@/types/omdb/movieResponse';
 import MovieIcon from '@/assets/images/icons/film.svg';
 import TextBlock from '@/components/common/TextBlock';
 import styles from './styles.module.css';
