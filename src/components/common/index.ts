@@ -2,6 +2,7 @@ export { default as HookFromTextarea } from './ReactHookForm/HookFormTextarea';
 export { default as HookFormCheckbox } from './ReactHookForm/HookFormCheckbox';
 export { default as HookFormInput } from './ReactHookForm/HookFormInput';
 export { default as PersonalDataModal } from './PersonalDataModal';
+export { default as CenteredMessage } from './CenteredMessage';
 export { default as TitleWithIcon } from './TitleWithIcon';
 export { default as DetailsBlock } from './DetailsBlock';
 export { default as TextBlock } from './TextBlock';

@@ -11,6 +11,7 @@
 
 .information_container > div:first-of-type {
   display: block;
+  margin-top: 0;
 }
 
 @media all and (max-width: 650px) {
