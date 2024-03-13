@@ -1,4 +1,4 @@
-import IOMDBMovieResponse from '@/types/omdb/movieResponse';
+import { IOMDBMovieResponse } from '@/types/omdb/movieResponse';
 import styles from './styles.module.css';
 import Poster from './Poster';
 import AddButton from './AddButton';
