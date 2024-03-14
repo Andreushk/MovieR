@@ -24,3 +24,9 @@
     width: 100%;
   }
 }
+
+@media all and (max-width: 450px) {
+  .container > img {
+    border-radius: 0;
+  }
+}

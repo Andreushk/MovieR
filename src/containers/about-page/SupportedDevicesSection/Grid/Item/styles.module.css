@@ -1,6 +1,6 @@
 .item_container {
   padding: 1.5rem;
-  border: 1px solid #262626;
+  border: 2px solid #262626;
   border-radius: 0.5rem;
   background: linear-gradient(225deg, rgba(0, 159, 242, 0.2) 22.067%, rgba(0, 0, 0, 0) 100%),
     rgb(20, 20, 20);
