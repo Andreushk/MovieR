@@ -17,3 +17,10 @@
     width: 100%;
   }
 }
+
+@media all and (max-width: 450px) {
+  .container {
+    width: 89.333%;
+    margin: 0 auto;
+  }
+}

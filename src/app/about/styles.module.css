@@ -8,3 +8,10 @@
     padding: 7.5rem 3rem 3rem 3rem;
   }
 }
+
+@media all and (max-width: 450px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

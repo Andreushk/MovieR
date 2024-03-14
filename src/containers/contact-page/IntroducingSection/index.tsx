@@ -13,7 +13,7 @@ const IntroducingSection: React.FC = () => (
       <Title>{TITLE}</Title>
       <Paragraph type="secondary">{TEXT}</Paragraph>
     </div>
-    <div className={styles.image_container}>
+    <div>
       <Image src={PostersImage} alt={IMAGE_ALT} />
     </div>
   </section>

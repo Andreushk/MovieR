@@ -31,7 +31,12 @@
   }
 }
 
-@media all and (max-width: 410px) {
+@media all and (max-width: 450px) {
+  .title_container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .title_container > h1 {
     font-size: 1.125rem;
     font-weight: 700;
