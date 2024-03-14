@@ -6,6 +6,9 @@ import './globalStyles.css';
 export const metadata: Metadata = {
   title: 'MovieR',
   description: 'View data about movies you interested in',
+  icons: {
+    icon: '/src/app/favicon.ico',
+  },
 };
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
