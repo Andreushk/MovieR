@@ -3,6 +3,11 @@
   width: 31.75rem;
 }
 
+.introduction_container img {
+  border: 0.25rem solid #262626;
+  border-radius: 0.5rem;
+}
+
 .title_container {
   margin-bottom: 1.5rem;
 }
@@ -12,15 +17,7 @@
   max-width: 80%;
 }
 
-.image_container {
-  padding: 0.25rem;
-  width: 31.75rem;
-  height: 28rem;
-  border-radius: 0.5rem;
-  background: #262626;
-}
-
-.image_container > img {
+.introduction_container img {
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
@@ -44,10 +41,5 @@
   .introduction_container {
     flex: 0 0 100%;
     width: 100%;
-  }
-
-  .image_container {
-    width: 100%;
-    height: auto;
   }
 }

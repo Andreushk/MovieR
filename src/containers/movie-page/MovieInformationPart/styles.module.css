@@ -29,7 +29,7 @@
   }
 }
 
-@media all and (max-width: 450px) {
+@media all and (max-width: 380px) {
   .poster_button_container {
     flex: 0 0 100%;
     width: 100%;
