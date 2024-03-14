@@ -22,5 +22,6 @@
   .container {
     width: 89.333%;
     margin: 0 auto;
+    padding: 2rem 1.5rem;
   }
 }
